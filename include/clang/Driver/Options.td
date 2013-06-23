@@ -980,6 +980,8 @@ def mno_rdseed : Flag<["-"], "mno-rdseed">, Group<m_x86_Features_Group>;
 
 def mno_thumb : Flag<["-"], "mno-thumb">, Group<m_Group>;
 def marm : Flag<["-"], "marm">, Alias<mno_thumb>;
+def ffixed_r9 : Flag<["-"], "ffixed-r9">, Group<f_clang_Group>,
+  HelpText<"Reserve the r9 register (ARM only)">, Flags<[HelpHidden]>;
 
 def mno_warn_nonportable_cfstrings : Flag<["-"], "mno-warn-nonportable-cfstrings">, Group<m_Group>;
 def mno_omit_leaf_frame_pointer : Flag<["-"], "mno-omit-leaf-frame-pointer">, Group<m_Group>;
